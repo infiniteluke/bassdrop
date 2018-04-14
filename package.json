@@ -1,0 +1,101 @@
+{
+  "name": "bassdrop",
+  "version": "0.0.1",
+  "description": "🔊 a downshift powered dropdown library for react vr",
+  "main": "src/bassdrop.js",
+  "repository": "git@github.com:infiniteluke/bassdrop.git",
+  "keywords": [
+    "react",
+    "drop down",
+    "downshift",
+    "select list",
+    "react-vr",
+    "vr",
+    "function as child",
+    "prop getter",
+    "render callback"
+  ],
+  "author": {
+    "name": "Luke Herrington",
+    "email": "lherrington100@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "BABEL_ENV=test jest --watch --coverage",
+    "test:ci": "jest --coverage && cat ./__coverage__/lcov.info | coveralls && npm run size",
+    "lint": "eslint src --ignore-path .gitignore --ignore-pattern docs .",
+    "prettier": "prettier --write \"src/**/*.js\"",
+    "readme": "emdaer && git add *.md .emdaer/.offline",
+    "documentation": "documentation build src/** -f html -o docs",
+    "size": "size-limit",
+    "precommit": "lint-staged && npm run size && npm run lint && npm run test && npm run documentation && git add docs && npm run readme"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-vr": ">=2.0.0"
+  },
+  "devDependencies": {
+    "@emdaer/cli": "^2.0.0",
+    "@emdaer/core": "^2.0.1",
+    "@emdaer/plugin-contributors-details-github": "^2.0.1",
+    "@emdaer/plugin-license-reference": "^2.0.0",
+    "@emdaer/plugin-shields": "^2.0.0",
+    "@emdaer/plugin-value-from-package": "^2.0.0",
+    "@emdaer/transform-prettier": "^2.0.0",
+    "@emdaer/transform-table-of-contents": "^2.0.0",
+    "babel-eslint": "^8.0.0",
+    "babel-preset-react-native": "^4.0.0",
+    "coveralls": "^2.13.1",
+    "documentation": "^5.3.2",
+    "eslint": "^4.7.0",
+    "eslint-config-prettier": "^2.5.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-react": "^7.3.0",
+    "husky": "^0.14.3",
+    "jest": "^21.1.0",
+    "lint-staged": "^4.2.1",
+    "metro-bundler": "^0.22.1",
+    "ovrui": "^1.4.1",
+    "prettier": "^1.7.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-native": "^0.54.3",
+    "react-vr": "^2.0.0",
+    "react-vr-web": "^2.0.0",
+    "size-limit": "^0.11.4",
+    "three": "^0.91.0",
+    "xopen": "^1.0.0"
+  },
+  "size-limit": [
+    {
+      "path": "src/bassdrop.js",
+      "webpack": false,
+      "limit": "1.5 KB"
+    }
+  ],
+  "jest": {
+    "coverageDirectory": "__coverage__",
+    "coverageThreshold": {
+      "global": {
+        "branches": 10,
+        "functions": 10,
+        "lines": 10,
+        "statements": 10
+      }
+    },
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.js"
+    ]
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "downshift": "^1.31.6"
+  }
+}

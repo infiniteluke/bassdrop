@@ -1,0 +1,15 @@
+__coverage__
+__tests__
+.emdaer
+.github
+docs
+.babelrc
+.eslintrc.yml
+.gitignore
+.prettierrc
+.travis.yml
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+yark.lock
+
+!lib

@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>bassdrop 0.0.1 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>bassdrop</h3>
+          <div class='mb1'><code>0.0.1</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#bassdrop'
+                  class="">
+                  BassDrop
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#props'
+                  class="">
+                  Props
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#stateandhelpers'
+                  class="">
+                  StateAndHelpers
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='bassdrop'>
+      BassDrop
+    </h3>
+    
+    
+  </div>
+  
+
+  <h1>bassdrop</h1>
+<h1 align="center">
+  🔊 bassdrop
+  </br>
+  <img src="https://user-images.githubusercontent.com/1127238/38772424-0d4ac7ee-3feb-11e8-90aa-68252a518286.png" alt="bassdrop logo" title="bassdrop logo" width="100">
+</h1>
+<p align="center">a downshift powered dropdown library for react vr</p>
+<hr />
+</br>
+
+
+  <div class='pre p1 fill-light mt0'>new BassDrop()</div>
+  
+  
+    <p>
+      Extends
+      
+        Component
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='props'>
+      Props
+    </h3>
+    
+    
+  </div>
+  
+
+  
+
+  <div class='pre p1 fill-light mt0'>Props</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>placeholder</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?)</code>
+          : The string to show when no item is selected/highlighted
+
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>children</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>?)</code>
+          : Is called with the StateAndHelpers of bassdrop.
+
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>render</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>?)</code>
+          : Is called with the StateAndHelpers of bassdrop.
+
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='stateandhelpers'>
+      StateAndHelpers
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>bassdrop's prop getters are exposed as a parameter to the render prop.
+For further documentation on downshift, see <a href="https://github.com/paypal/downshift">https://github.com/paypal/downshift</a>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>StateAndHelpers</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>getRootProps</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+          : prop getter - Sets the root props for the root container and sets suppressRefError=true.
+
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>getToggleButtonProps</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+          : prop getter - returns the props to be applied to the VrButton that toggles bassdrop open.
+
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>selectedItemIsHighlighted</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a>)</code>
+          : state - whether or not the selected item is highlighted.
+
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>itemDisplay</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          : state - either the selected value, the highlighted value, or the placeholder prop value.
+
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
